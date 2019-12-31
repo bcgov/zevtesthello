@@ -1,0 +1,78 @@
+{
+  "@bcgov/bcdk": {
+    "promptValues": {
+      "modules": {
+        "jenkins": {
+          "path": ".jenkins",
+          "name": "jenkins",
+          "namespace": "tbiwaq-tools",
+          "version": "1.0.0",
+          "environments": {
+            "build": {
+              "namespace": "tbiwaq-tools"
+            },
+            "dev": {
+              "namespace": "tbiwaq-dev"
+            },
+            "prod": {
+              "namespace": "tbiwaq-prod"
+            }
+          },
+          "jenkinsJobName": "_jenkins",
+          "github_owner": "bcgov",
+          "github_repo": "zevtesthello",
+          "jenkinsFilePath": ".jenkins/Jenkinsfile",
+          "uuid": "18526748-fada-42d1-8944-5b6283ba2f9d"
+        },
+        ".": {
+          "name": "hello",
+          "version": "1.0.0",
+          "path": ".",
+          "environments": {
+            "build": {
+              "namespace": "tbiwaq-tools"
+            },
+            "dev": {
+              "namespace": "tbiwaq-dev"
+            },
+            "test": {
+              "namespace": "tbiwaq-test"
+            },
+            "prod": {
+              "namespace": "tbiwaq-prod"
+            }
+          },
+          "jenkinsJobName": "hello",
+          "github_owner": "bcgov",
+          "github_repo": "zevtesthello",
+          "jenkinsFilePath": "Jenkinsfile",
+          "uuid": "75cad1e8-be51-443f-936a-04d87ec2466b"
+        },
+        "main": {
+          "name": "main",
+          "path": ".",
+          "components": {
+            "hello": {
+              "name": "hello"
+            }
+          },
+          "version": "1.0.0",
+          "environments": {
+            "build": {
+              "namespace": "tbiwaq-tools"
+            },
+            "dev": {
+              "namespace": "tbiwaq-dev"
+            },
+            "test": {
+              "namespace": "tbiwaq-test"
+            },
+            "prod": {
+              "namespace": "tbiwaq-prod"
+            }
+          }
+        }
+      }
+    }
+  }
+}
